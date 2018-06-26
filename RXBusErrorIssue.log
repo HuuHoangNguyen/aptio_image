@@ -364,7 +364,8 @@ DMAINTERRUPT = 0x00000000
 DMARXSTATUS = 0x00000000 
 DMARXCTRL = 0x00000000 
 ----------------------------------------------------------------------
-Update DMARXDESCRIPTORL & DMARXDESCRIPTORH to a correctly AddressDUMP: Descriptor -> PktStartAddrL = 0x3E025C0
+Update DMARXDESCRIPTORL & DMARXDESCRIPTORH to a correctly Address: 0xF20DF040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E025C0
 DUMP: Descriptor -> PktSize       = 0x20
 DUMP: Descriptor -> PktOvr        = 0x6
 DUMP: Descriptor -> E             = 0x1
@@ -491,7 +492,8 @@ DMAINTERRUPT = 0x00000000
 DMARXSTATUS = 0x00000000 
 DMARXCTRL = 0x00000000 
 ----------------------------------------------------------------------
-Update DMARXDESCRIPTORL & DMARXDESCRIPTORH to a correctly AddressDUMP: Descriptor -> PktStartAddrL = 0x3E025C0
+Update DMARXDESCRIPTORL & DMARXDESCRIPTORH to a correctly Address: 0xF20DF040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E025C0
 DUMP: Descriptor -> PktSize       = 0x20
 DUMP: Descriptor -> PktOvr        = 0x6
 DUMP: Descriptor -> E             = 0x1
@@ -618,7 +620,8 @@ DMAINTERRUPT = 0x00000000
 DMARXSTATUS = 0x00000000 
 DMARXCTRL = 0x00000000 
 ----------------------------------------------------------------------
-Update DMARXDESCRIPTORL & DMARXDESCRIPTORH to a correctly AddressDUMP: Descriptor -> PktStartAddrL = 0x3E025C0
+Update DMARXDESCRIPTORL & DMARXDESCRIPTORH to a correctly Address: 0xF20DF040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E025C0
 DUMP: Descriptor -> PktSize       = 0x20
 DUMP: Descriptor -> PktOvr        = 0x6
 DUMP: Descriptor -> E             = 0x1
