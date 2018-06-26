@@ -1,0 +1,716 @@
+DRAM FW v180508
+PHY calibrating ... DRAM Region[0]: 0x0080000000 - 0x00FFFFFFFF
+DRAM Region[1]: 0x0880000000 - 0x0FFFFFFFFF
+ECC init ................****************................****************................****************................****************................****************................****************................****************................****************................****************................****************................****************................****************................****************................****************................****************................****************................                  MCU[0]-Slot[0]: RDIMM[ID:ce80] M393A4K40BB1-CRC 32GB 2 rank(s) x4
+DRAM: 32GB DDR4 2400 ECC
+NOTICE:  Booting Trusted Firmware
+NOTICE:  BL1: v1.2(release):test
+NOTICE:  BL1: Built : 15:47:32, Jun 15 2018
+Configure secure mode for TrustZone DRAM region
+NOTICE:  [I2C2] mnguyen_Set ddr_mux channel 3
+NOTICE:  BL1: Booting BL2
+NOTICE:  BL2: v1.2(release):test
+NOTICE:  BL2: Built : 15:47:34, Jun 15 2018
+NOTICE:  BL1: Booting BL31
+NOTICE:  BL31: v1.2(release):test
+NOTICE:  BL31: Built : 15:47:40, Jun 15 2018
+Checkpoint 2F
+Checkpoint 2E
+Checkpoint 31
+Checkpoint 32
+SMpro FW version: 4.08
+PMpro FW version: 4.08
+FW date: 20180611
+CPU info
+    CPU ID                    : 503F0002
+    CPU Clock                 : 3000 MHz
+    Number of cores available : 32
+    DVFS support              : 1
+    PMD VRM                   : 930 mV
+SOC info
+    DDR Frequency             : 2400 MHz
+    SOC VRM                   : 850 mV
+    DIMM VRD1 VRM             : 1200 mV
+    DIMM VRD2 VRM             : 1200 mV
+    PCP Clock                 : 3000 MHz
+    SOC Clock                 : 2500 MHz
+    IOBAXI Clock              : 500 MHz
+    AXI Clock                 : 250 MHz
+    AHB Clock                 : 208 MHz
+    APB Clock                 : 104 MHz
+Pre-boot Configuration Setting:
+    0000: 0xFFFFFFFF (-1)
+    0010: 0x0 (0)
+    00C8: 0x0 (0)
+    00D8: 0xFFFF (65535)
+    0208: 0x0 (0)
+Checkpoint 4F
+Checkpoint 60
+Checkpoint 61
+Checkpoint 9A
+[SATA-0] ssc 0
+[SATA-1] ssc 0
+[SATA-2] ssc 0
+[SATA-3] ssc 0
+Checkpoint 78
+[PCIE-0] ssc 0
+[PCIE-0] preset 7 
+[PCIE-0] ssc 0
+[PCIE-0] preset 7 
+[PCIE-0] ssc 0
+[PCIE-0] preset 7 
+[PCIE-2] ssc 0
+[PCIE-2] preset 7 
+[PCIE-2] ssc 0
+[PCIE-2] preset 7 
+[PCIE-2] ssc 0
+[PCIE-2] preset 7 
+[PCIE-4] ssc 0
+[PCIE-4] preset 7 
+[PCIE-4] ssc 0
+[PCIE-4] preset 7 
+[PCIE-4] ssc 0
+[PCIE-4] preset 7 
+[PCIE-6] ssc 0
+[PCIE-6] preset 7 
+Checkpoint 90
+Checkpoint 92
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 91
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 97
+98Checkpoint 98
+9DCheckpoint 9D
+9CCheckpoint 9C
+B4Checkpoint B4
+B4Checkpoint B4
+9DCheckpoint 9D
+9CCheckpoint 9C
+B4Checkpoint B4
+92Checkpoint 92
+A0Checkpoint A0
+A2Checkpoint A2
+A2Checkpoint A2
+A0Checkpoint A0
+A2Checkpoint A2
+A2Checkpoint A2
+92Checkpoint 92
+92Checkpoint 92
+92Checkpoint 92
+92Checkpoint 92
+A0Checkpoint A0
+A0Checkpoint A0
+Version 2.19.1268. Copyright (C) 2018 American Megatrends, Inc.                 BIOS Date: 06/15/2018 15:25:31 Ver: OSPREY 4.8.7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Press <DEL> or <ESC> to enter setup.Checkpoint AD
+UEFI Interactive Shell v2.1
+EDK II
+UEFI v2.60 (American Megatrends, 0x0005000D)
+Mapping table
+      FS0: Alias(s):HD13a65535a1:;BLK1:
+          PciRoot(0xFF)/Pci(0x1,0x0)/Sata(0x0,0xFFFF,0x0)/HD(1,GPT,83C0318C-BC6D-444E-8F91-6D06A92A9644,0x800,0x64000)
+      FS1: Alias(s):HD14b65535a1:;BLK9:
+          PciRoot(0xFF)/Pci(0x2,0x0)/Sata(0x1,0xFFFF,0x0)/HD(1,GPT,0626EFCC-9BF5-4C42-A2E6-95918F3845E9,0x800,0x64000)
+    BLK14: Alias(s):
+          PciRoot(0xFF)/Pci(0x3,0x0)/USB(0x0,0x0)/USB(0x1,0x0)
+    BLK15: Alias(s):
+          PciRoot(0xFF)/Pci(0x4,0x0)/USB(0x0,0x0)
+     BLK0: Alias(s):
+          PciRoot(0xFF)/Pci(0x1,0x0)/Sata(0x0,0xFFFF,0x0)
+     BLK6: Alias(s):
+          PciRoot(0xFF)/Pci(0x1,0x0)/Sata(0x1,0xFFFF,0x0)
+     BLK2: Alias(s):
+          PciRoot(0xFF)/Pci(0x1,0x0)/Sata(0x0,0xFFFF,0x0)/HD(2,GPT,8DE3855D-F473-4555-A214-008DBB1858CA,0x64800,0x200000)
+     BLK3: Alias(s):
+          PciRoot(0xFF)/Pci(0x1,0x0)/Sata(0x0,0xFFFF,0x0)/HD(3,GPT,A62D3A72-3CC3-4CF2-A388-47669D53010A,0x264800,0xFA0800)
+     BLK4: Alias(s):
+          PciRoot(0xFF)/Pci(0x1,0x0)/Sata(0x0,0xFFFF,0x0)/HD(4,GPT,19984F8A-4FA9-40F2-8803-D4632AFD68BF,0x1205000,0x6400000)
+     BLK5: Alias(s):
+          PciRoot(0xFF)/Pci(0x1,0x0)/Sata(0x0,0xFFFF,0x0)/HD(5,GPT,ECD8C53D-6CD8-4958-AEE1-EB28C0DA9EA5,0x7605000,0x698F800)
+     BLK7: Alias(s):
+          PciRoot(0xFF)/Pci(0x2,0x0)/Sata(0x0,0xFFFF,0x0)
+     BLK8: Alias(s):
+          PciRoot(0xFF)/Pci(0x2,0x0)/Sata(0x1,0xFFFF,0x0)
+    BLK10: Alias(s):
+          PciRoot(0xFF)/Pci(0x2,0x0)/Sata(0x1,0xFFFF,0x0)/HD(2,GPT,37B6D1D1-AA3C-4BF3-B705-725640B03CFB,0x64800,0x200000)
+    BLK11: Alias(s):
+          PciRoot(0xFF)/Pci(0x2,0x0)/Sata(0x1,0xFFFF,0x0)/HD(3,GPT,5E90EA52-553D-4BBC-9871-75D652EBA813,0x264800,0x1FA0800)
+    BLK12: Alias(s):
+          PciRoot(0xFF)/Pci(0x2,0x0)/Sata(0x1,0xFFFF,0x0)/HD(4,GPT,89DB7D78-2D46-42F4-9063-0D532C565B67,0x2205000,0x6400000)
+    BLK13: Alias(s):
+          PciRoot(0xFF)/Pci(0x2,0x0)/Sata(0x1,0xFFFF,0x0)/HD(5,GPT,F861D848-D402-4273-B482-ED52564E2789,0x8605000,0x156EE000)
+Press ESC in 5 seconds to skip startup.nsh or any other key to continue.Press ESC in 4 seconds to skip startup.nsh or any other key to continue.Press ESC in 3 seconds to skip startup.nsh or any other key to continue.Press ESC in 2 seconds to skip startup.nsh or any other key to continue.Press ESC in 1 seconds to skip startup.nsh or any other key to continue.
+ 
+ Start DHCP Process 
+ Waiting ... 
+ Done DHCP Process 
+
+ipv4 address : 10.76.186.138
+autoboot: <null string> 
+ 
+ Start set mode process 
+Shell> tftp_load -i eth0 10.76.178.249 validation/hhnguyen/aptio/vRGMII.efi
+Load file to address 000000009F000000 
+Downloading the file 'validation/hhnguyen/aptio/vRGMII.efi'
+[                                        ]       0 Kb[>                                       ]       8 Kb[=>                                      ]      17 Kb[==>                                     ]      25 Kb[===>                                    ]      34 Kb[====>                                   ]      42 Kb[=====>                                  ]      51 Kb[======>                                 ]      59 Kb[=======>                                ]      68 Kb[========>                               ]      76 Kb[=========>                              ]      84 Kb[==========>                             ]      93 Kb[===========>                            ]     101 Kb[============>                           ]     110 Kb[=============>                          ]     118 Kb[==============>                         ]     127 Kb[===============>                        ]     135 Kb[================>                       ]     144 Kb[=================>                      ]     152 Kb[==================>                     ]     160 Kb[===================>                    ]     169 Kb[====================>                   ]     177 Kb[=====================>                  ]     186 Kb[======================>                 ]     194 Kb[=======================>                ]     203 Kb[========================>               ]     211 Kb[=========================>              ]     220 Kb[==========================>             ]     228 Kb[===========================>            ]     236 Kb[============================>           ]     245 Kb[=============================>          ]     253 Kb[==============================>         ]     262 Kb[===============================>        ]     270 Kb[================================>       ]     279 Kb[=================================>      ]     287 Kb[==================================>     ]     296 Kb[===================================>    ]     304 Kb[====================================>   ]     312 Kb[=====================================>  ]     321 Kb[======================================> ]     329 Kb[=======================================>]     337 Kb
+Shell> go v
+Argv[0] : v
+go vRGMII 0    : Display testcases list 
+go vRGMII 1    : Tx Sent a random package 
+go vRGMII 2    : Tx2Rx Mac Loopback 
+go vRGMII 3    : Tx2Rx Bridge Loopback 
+go vRGMII 4    : Tx2Rx Bridge Loopback & Open Gate to sent out Package 
+go vRGMII 5    : Rx Received a Package 
+go vRGMII 6    : Rx2Tx Memory Loopback with a package 
+go vRGMII 7    : Rx2Tx Buffer Loopback 
+go vRGMII 8    : Rx2Tx Broadcast filter 
+go vRGMII 9    : Rx2Tx Multicast filter 
+go vRGMII 10   : Rx2Tx Unicast filter 
+go vRGMII 11   : Rx2Tx Handling to Address Error 
+go vRGMII 12   : Rx Received Package mode 10  Mbps 
+go vRGMII 13   : Rx Received Package mode 100 Mbps 
+go vRGMII 14   : Link status interrupt 
+go vRGMII 15   : Link down on port interrupt 
+go vRGMII 16   : Tx send package mode 10M 
+go vRGMII 17   : Tx send package mode 100M 
+go vRGMII 18   : Interrupt handling to Rx Received a Package 
+go vRGMII 19   : Interrupt handling to Tx Sent a Package 
+go vRGMII 20   : Interrupt handling when DMA TX under-run have happen 
+go vRGMII 21   : Interrupt handling when DMA Rx Over-flow have happen 
+go vRGMII 22   : Interrupt handling when DMA TX Bus error have happen 
+go vRGMII 23   : Interrupt handling when DMA Rx Bus error have happen 
+go vRGMII 24   : Interrupt handling when ICM data fifo OverRun have happen 
+go vRGMII 25   : Interrupt handling when RxBuf Under-Flow have happen 
+go vRGMII 26   : Interrupt handling when RxBuf Over-Flow have happen 
+go vRGMII 27   : Interrupt handling when TxBuf Under-Flow have happen 
+go vRGMII 28   : Interrupt handling when TxBuf Over-Flow have happen 
+go vRGMII 29   : Interrupt handling when TxBuf Under-Run have happen 
+go vRGMII 30   : RGMII Wake On Lan 
+go vRGMII 31   : RGMII Check 'MirrorRev' of BlockIDv register 
+go vRGMII 35   : RGMII Check Mem Ready have reset mem bits 
+go vRGMII 36   : RGMII Check Mem Ready NOT reset mem bits 
+go vRGMII 37   : Check TxRx Bus Error set & Clear 
+go vRGMII 40   : Tx Interrupt handling stress 
+go vRGMII 41   : Rx Interrupt handling stress 
+go vRGMII 42   : Tx BusError handling stress 
+go vRGMII 43   : Rx BusError handling stress 
+
+go vRGMII 45   : Tx BusError interrupt handling stress debug 
+go vRGMII 46   : Tx BusError interrupt handling stress debug with disable DMA RX
+ 
+go vRGMII 47   : Rx BusError interrupt handling stress debug 
+go vRGMII 48   : BusError Rx interrupt handling with repaired DMARXDESCRIPTORL & DMARXDESCRIPTORH
+ 
+go vRGMII 50   : Rx2Tx Loopback Val Driver 
+Shell> go v 48
+Argv[0] : v
+Argv[1] : 48
+TestNum 48
+Testcase: BusError Rx interrupt handling with repaired DMARXDESCRIPTORL & DMARXDESCRIPTORH
+ Disconnect Device --> gEfiManagedNetworkProtocolGuid 
+DEBUG: CheckDisconnectMnp = 0 
+gBS->LocateHandle of gEfiManagedNetworkProtocolGuid 
+Disconnect device:
+Device Name: gEfiManagedNetworkProtocolGuid 
+======================================================= 
+DEBUG: HandleIndex = 0 
+DEBUG: HandleBufSize = 6 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+======================================================= 
+DEBUG: HandleIndex = 1 
+DEBUG: HandleBufSize = 6 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+======================================================= 
+DEBUG: HandleIndex = 2 
+DEBUG: HandleBufSize = 6 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+======================================================= 
+DEBUG: HandleIndex = 3 
+DEBUG: HandleBufSize = 6 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+======================================================= 
+DEBUG: HandleIndex = 4 
+DEBUG: HandleBufSize = 6 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+======================================================= 
+DEBUG: HandleIndex = 5 
+DEBUG: HandleBufSize = 6 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+DEBUG: CheckDisconnectMnp = 1 
+Disconnect Device --> gEfiSimpleNetworkProtocolGuid 
+DEBUG: CheckDisconnectMnp = 0 
+gBS->LocateHandle of gEfiSimpleNetworkProtocolGuid 
+Disconnect device:
+Device Name: gEfiSimpleNetworkProtocolGuid 
+======================================================= 
+DEBUG: HandleIndex = 0 
+DEBUG: HandleBufSize = 2 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+======================================================= 
+DEBUG: HandleIndex = 1 
+DEBUG: HandleBufSize = 2 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+DEBUG: CheckDisconnectMnp = 1 
+Set Utils to all ETH portsEthDev->IOBase = 0x1F140000 
+RGMII0->EthAddrCsrBase = 0x1F140000 
+Reset and re-set clock to RGMII 
+Begin EthInitECC 
+EthInitECC-> Count = 1 
+EthInitECC-> Data = 0xFFFFFFFF 
+End EthInitECC 
+Configured to RGMII's MAC 
+READ  : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000100 
+WRITE : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000000 
+READ  : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000000 
+WRITE  : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000000 
+READ  : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000000 
+WRITE  : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000100 
+READ  : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000100 
+Setup Descriptor of Rx & Tx
+Init MII Phy 
+---------------------------------------------------------------------
+INFO: PHY Status : LINK UP 
+INFO: PHY Speed: 1 Gbps 
+INFO: PHY Mode: FULL Duplex  
+Disable Filter Mode 
+
+==================================================================
+READ: MPIC_DEBUG_REG= 0x00000000 
+READ: LINK_STS_INTR= 0x00000000 
+READ: AUTOPOLL_LINK_STS_INTR= 0x00000000 
+READ: MAC_INT_REG0_REG= 0x00000000 
+READ: MAC_INT_REG1_REG= 0x00000000 
+READ: ICM_ECM_INT_REG_REG= 0x00000000 
+READ: RX_TX_BUF_INT_REG= 0x00000000 
+READ: ICM_DROP_INT_REG= 0x00000000 
+READ: ICM_DROP_COUNT_REG= 0x00000000 
+READ: DMATXSTATUS= 0x00000000 
+READ: DMARXSTATUS= 0x00000000 
+READ: DMAINTERRUPT= 0x00000000 
+gBS->LocateHandle of gHardwareInterruptProtocolGuid 
+Register ETH_RGMII_DMA_IRQ_ID [107] Interrupt Handler
+EthEnableIntOfDMAIntMaskReg -> DATA = 0x00000088 
+READ: DMAINTRMASK= 0x00000088 
+===========================================
+ RECEIVED THE PACKAGE & WAITING 'IntDMABusErrorRx' Interrupt
+       WAITING TO RECEIVE THE PACKAGE      
+===========================================
+
+===========================================
+=====   IXIA START SENT PACKET        =====
+===========================================
+DMARXCTRL = 0x00000001 
+DMATXSTATUS = 0x00000000 
+
+==================================================================
+     In: IntDMABusErrorRx_ISR          
+----------------------------------------------------------------------
+Dump all interrupt Regs before clear 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000088 
+DMAINTERRUPT = 0x00000080 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000008 
+DMARXDESCRIPTORL = 0x30000000 
+DMARXDESCRIPTORH = 0x00000000 
+###############################################
+####               TEST PASS               ####
+###############################################
+----------------------------------------------------------------------
+Write to clear Interrupt 
+DMARXSTATUS = 0x00000008 
+DMAINTERRUPT = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXCTRL = 0x00000000 
+----------------------------------------------------------------------
+Update DMARXDESCRIPTORL & DMARXDESCRIPTORH to a correctly AddressDUMP: Descriptor -> PktStartAddrL = 0x3E025C0
+DUMP: Descriptor -> PktSize       = 0x20
+DUMP: Descriptor -> PktOvr        = 0x6
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C837C20
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+----------------------------------------------------------------------
+
+Dump all interrupt Regs after clear 
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000088 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+DMAINTERRUPT__TX_BUS_ERROR bit is: 0 
+DMAINTERRUPT__RX_BUS_ERROR bit is: 1 
+WRITE: DMARXCTRL = 0x00000001 
+READ : DMARXCTRL = 0x00000000 
+-------------------------------
+READ: DMARXCTRL = 0x00000000 
+READ: DMARXSTATUS = 0x00000008 
+READ: DMARXDESCRIPTORL = 0xF20DF040 
+READ: DMARXDESCRIPTORH = 0x0000000F 
+
+==================================================================
+
+==================================================================
+     In: IntDMABusErrorRx_ISR          
+----------------------------------------------------------------------
+Dump all interrupt Regs before clear 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000088 
+DMAINTERRUPT = 0x00000080 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000008 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+###############################################
+####               TEST PASS               ####
+###############################################
+----------------------------------------------------------------------
+Write to clear Interrupt 
+DMARXSTATUS = 0x00000008 
+DMAINTERRUPT = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXCTRL = 0x00000000 
+----------------------------------------------------------------------
+
+Dump all interrupt Regs after clear 
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000088 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+DMAINTERRUPT__TX_BUS_ERROR bit is: 0 
+DMAINTERRUPT__RX_BUS_ERROR bit is: 1 
+WRITE: DMARXCTRL = 0x00000001 
+READ : DMARXCTRL = 0x00000000 
+-------------------------------
+READ: DMARXCTRL = 0x00000000 
+READ: DMARXSTATUS = 0x00000008 
+READ: DMARXDESCRIPTORL = 0xF20DF040 
+READ: DMARXDESCRIPTORH = 0x0000000F 
+
+==================================================================
+
+==================================================================
+     In: IntDMABusErrorRx_ISR          
+----------------------------------------------------------------------
+Dump all interrupt Regs before clear 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000088 
+DMAINTERRUPT = 0x00000080 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000008 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+###############################################
+####               TEST PASS               ####
+###############################################
+----------------------------------------------------------------------
+Write to clear Interrupt 
+DMARXSTATUS = 0x00000008 
+DMAINTERRUPT = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXCTRL = 0x00000000 
+----------------------------------------------------------------------
+Update DMARXDESCRIPTORL & DMARXDESCRIPTORH to a correctly AddressDUMP: Descriptor -> PktStartAddrL = 0x3E025C0
+DUMP: Descriptor -> PktSize       = 0x20
+DUMP: Descriptor -> PktOvr        = 0x6
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C837C20
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+----------------------------------------------------------------------
+
+Dump all interrupt Regs after clear 
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000088 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+DMAINTERRUPT__TX_BUS_ERROR bit is: 0 
+DMAINTERRUPT__RX_BUS_ERROR bit is: 1 
+WRITE: DMARXCTRL = 0x00000001 
+READ : DMARXCTRL = 0x00000000 
+-------------------------------
+READ: DMARXCTRL = 0x00000000 
+READ: DMARXSTATUS = 0x00000008 
+READ: DMARXDESCRIPTORL = 0xF20DF040 
+READ: DMARXDESCRIPTORH = 0x0000000F 
+
+==================================================================
+
+==================================================================
+     In: IntDMABusErrorRx_ISR          
+----------------------------------------------------------------------
+Dump all interrupt Regs before clear 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000088 
+DMAINTERRUPT = 0x00000080 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000008 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+###############################################
+####               TEST PASS               ####
+###############################################
+----------------------------------------------------------------------
+Write to clear Interrupt 
+DMARXSTATUS = 0x00000008 
+DMAINTERRUPT = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXCTRL = 0x00000000 
+----------------------------------------------------------------------
+
+Dump all interrupt Regs after clear 
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000088 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+DMAINTERRUPT__TX_BUS_ERROR bit is: 0 
+DMAINTERRUPT__RX_BUS_ERROR bit is: 1 
+WRITE: DMARXCTRL = 0x00000001 
+READ : DMARXCTRL = 0x00000000 
+-------------------------------
+READ: DMARXCTRL = 0x00000000 
+READ: DMARXSTATUS = 0x00000008 
+READ: DMARXDESCRIPTORL = 0xF20DF040 
+READ: DMARXDESCRIPTORH = 0x0000000F 
+
+==================================================================
+
+==================================================================
+     In: IntDMABusErrorRx_ISR          
+----------------------------------------------------------------------
+Dump all interrupt Regs before clear 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000088 
+DMAINTERRUPT = 0x00000080 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000008 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+###############################################
+####               TEST PASS               ####
+###############################################
+----------------------------------------------------------------------
+Write to clear Interrupt 
+DMARXSTATUS = 0x00000008 
+DMAINTERRUPT = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXCTRL = 0x00000000 
+----------------------------------------------------------------------
+Update DMARXDESCRIPTORL & DMARXDESCRIPTORH to a correctly AddressDUMP: Descriptor -> PktStartAddrL = 0x3E025C0
+DUMP: Descriptor -> PktSize       = 0x20
+DUMP: Descriptor -> PktOvr        = 0x6
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C837C20
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+----------------------------------------------------------------------
+
+Dump all interrupt Regs after clear 
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000088 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+DMAINTERRUPT__TX_BUS_ERROR bit is: 0 
+DMAINTERRUPT__RX_BUS_ERROR bit is: 1 
+WRITE: DMARXCTRL = 0x00000001 
+READ : DMARXCTRL = 0x00000000 
+-------------------------------
+READ: DMARXCTRL = 0x00000000 
+READ: DMARXSTATUS = 0x00000008 
+READ: DMARXDESCRIPTORL = 0xF20DF040 
+READ: DMARXDESCRIPTORH = 0x0000000F 
+
+==================================================================
+
+==================================================================
+     In: IntDMABusErrorRx_ISR          
+----------------------------------------------------------------------
+Dump all interrupt Regs before clear 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000088 
+DMAINTERRUPT = 0x00000080 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000008 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+###############################################
+####               TEST PASS               ####
+###############################################
+----------------------------------------------------------------------
+Write to clear Interrupt 
+DMARXSTATUS = 0x00000008 
+DMAINTERRUPT = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXCTRL = 0x00000000 
+----------------------------------------------------------------------
+
+Dump all interrupt Regs after clear 
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000088 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+DMAINTERRUPT__TX_BUS_ERROR bit is: 0 
+DMAINTERRUPT__RX_BUS_ERROR bit is: 1 
+WRITE: DMARXCTRL = 0x00000001 
+READ : DMARXCTRL = 0x00000000 
+-------------------------------
+READ: DMARXCTRL = 0x00000000 
+READ: DMARXSTATUS = 0x00000004 
+READ: DMARXDESCRIPTORL = 0xF20DF040 
+READ: DMARXDESCRIPTORH = 0x0000000F 
+
+==================================================================
