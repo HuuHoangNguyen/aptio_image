@@ -1,0 +1,1229 @@
+
+Shell> AT S7=45 S0=0 L1 V1 X4 &c1 E1 Q0
+'AT' is not recognized as an internal or external command, operable program, or script file.
+Shell> tftp_load -i eth0 10.76.178.249 validation/hhnguyen/aptio/vRGMII.efi
+Load file to address 000000009F000000 
+Downloading the file 'validation/hhnguyen/aptio/vRGMII.efi'
+[                                        ]       0 Kb[>                                       ]       8 Kb[=>                                      ]      17 Kb[==>                                     ]      25 Kb[===>                                    ]      34 Kb[====>                                   ]      42 Kb[=====>                                  ]      51 Kb[======>                                 ]      59 Kb[=======>                                ]      68 Kb[========>                               ]      76 Kb[=========>                              ]      85 Kb[==========>                             ]      93 Kb[===========>                            ]     102 Kb[============>                           ]     110 Kb[=============>                          ]     119 Kb[==============>                         ]     127 Kb[===============>                        ]     136 Kb[================>                       ]     144 Kb[=================>                      ]     153 Kb[==================>                     ]     161 Kb[===================>                    ]     170 Kb[====================>                   ]     178 Kb[=====================>                  ]     187 Kb[======================>                 ]     195 Kb[=======================>                ]     204 Kb[========================>               ]     212 Kb[=========================>              ]     221 Kb[==========================>             ]     229 Kb[===========================>            ]     238 Kb[============================>           ]     246 Kb[=============================>          ]     255 Kb[==============================>         ]     263 Kb[===============================>        ]     272 Kb[================================>       ]     280 Kb[=================================>      ]     289 Kb[==================================>     ]     297 Kb[===================================>    ]     306 Kb[====================================>   ]     314 Kb[=====================================>  ]     323 Kb[======================================> ]     331 Kb[=======================================>]     339 Kb
+Shell> go v 45  
+Argv[0] : v
+go vRGMII 0    : Display testcases list 
+go vRGMII 1    : Tx Sent a random package 
+go vRGMII 2    : Tx2Rx Mac Loopback 
+go vRGMII 3    : Tx2Rx Bridge Loopback 
+go vRGMII 4    : Tx2Rx Bridge Loopback & Open Gate to sent out Package 
+go vRGMII 5    : Rx Received a Package 
+go vRGMII 6    : Rx2Tx Memory Loopback with a package 
+go vRGMII 7    : Rx2Tx Buffer Loopback 
+go vRGMII 8    : Rx2Tx Broadcast filter 
+go vRGMII 9    : Rx2Tx Multicast filter 
+go vRGMII 10   : Rx2Tx Unicast filter 
+go vRGMII 11   : Rx2Tx Handling to Address Error 
+go vRGMII 12   : Rx Received Package mode 10  Mbps 
+go vRGMII 13   : Rx Received Package mode 100 Mbps 
+go vRGMII 14   : Link status interrupt 
+go vRGMII 15   : Link down on port interrupt 
+go vRGMII 16   : Tx send package mode 10M 
+go vRGMII 17   : Tx send package mode 100M 
+go vRGMII 18   : Interrupt handling to Rx Received a Package 
+go vRGMII 19   : Interrupt handling to Tx Sent a Package 
+go vRGMII 20   : Interrupt handling when DMA TX under-run have happen 
+go vRGMII 21   : Interrupt handling when DMA Rx Over-flow have happen 
+go vRGMII 22   : Interrupt handling when DMA TX Bus error have happen 
+go vRGMII 23   : Interrupt handling when DMA Rx Bus error have happen 
+go vRGMII 24   : Interrupt handling when ICM data fifo OverRun have happen 
+go vRGMII 25   : Interrupt handling when RxBuf Under-Flow have happen 
+go vRGMII 26   : Interrupt handling when RxBuf Over-Flow have happen 
+go vRGMII 27   : Interrupt handling when TxBuf Under-Flow have happen 
+go vRGMII 28   : Interrupt handling when TxBuf Over-Flow have happen 
+go vRGMII 29   : Interrupt handling when TxBuf Under-Run have happen 
+go vRGMII 30   : RGMII Wake On Lan 
+go vRGMII 31   : RGMII Check 'MirrorRev' of BlockIDv register 
+go vRGMII 35   : RGMII Check Mem Ready have reset mem bits 
+go vRGMII 36   : RGMII Check Mem Ready NOT reset mem bits 
+go vRGMII 37   : Check TxRx Bus Error set & Clear 
+go vRGMII 40   : Tx Interrupt handling stress 
+go vRGMII 41   : Rx Interrupt handling stress 
+go vRGMII 42   : Tx BusError handling stress 
+go vRGMII 43   : Rx BusError handling stress 
+
+go vRGMII 45   : Tx BusError interrupt handling stress debug 
+go vRGMII 46   : Tx BusError interrupt handling stress debug with disable DMA RX
+ 
+go vRGMII 47   : Rx BusError interrupt handling stress debug 
+go vRGMII 48   : BusError Rx interrupt handling with repaired DMARXDESCRIPTORL & DMARXDESCRIPTORH
+ 
+go vRGMII 50   : Rx2Tx Loopback Val Driver 
+Shell> go v 45
+Argv[0] : v
+Argv[1] : 45
+TestNum 45
+Testcase: BusError Tx interrupt handling stress DebugDisconnect Device --> gEfiManagedNetworkProtocolGuid 
+DEBUG: CheckDisconnectMnp = 0 
+gBS->LocateHandle of gEfiManagedNetworkProtocolGuid 
+Disconnect device:
+Device Name: gEfiManagedNetworkProtocolGuid 
+======================================================= 
+DEBUG: HandleIndex = 0 
+DEBUG: HandleBufSize = 6 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+======================================================= 
+DEBUG: HandleIndex = 1 
+DEBUG: HandleBufSize = 6 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+======================================================= 
+DEBUG: HandleIndex = 2 
+DEBUG: HandleBufSize = 6 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+======================================================= 
+DEBUG: HandleIndex = 3 
+DEBUG: HandleBufSize = 6 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+======================================================= 
+DEBUG: HandleIndex = 4 
+DEBUG: HandleBufSize = 6 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+======================================================= 
+DEBUG: HandleIndex = 5 
+DEBUG: HandleBufSize = 6 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+DEBUG: CheckDisconnectMnp = 1 
+Disconnect Device --> gEfiSimpleNetworkProtocolGuid 
+DEBUG: CheckDisconnectMnp = 0 
+gBS->LocateHandle of gEfiSimpleNetworkProtocolGuid 
+Disconnect device:
+Device Name: gEfiSimpleNetworkProtocolGuid 
+======================================================= 
+DEBUG: HandleIndex = 0 
+DEBUG: HandleBufSize = 2 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+======================================================= 
+DEBUG: HandleIndex = 1 
+DEBUG: HandleBufSize = 2 
+DEBUG: HandleBufID = 0x00000006C646E68 
+======================================================= 
+DEBUG: CheckDisconnectMnp = 1 
+Set Utils to all ETH portsEthDev->IOBase = 0x1F140000 
+RGMII0->EthAddrCsrBase = 0x1F140000 
+Reset and re-set clock to RGMII 
+Begin EthInitECC 
+EthInitECC-> Count = 1 
+EthInitECC-> Data = 0xFFFFFFFF 
+End EthInitECC 
+Configured to RGMII's MAC 
+READ  : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000100 
+WRITE : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000000 
+READ  : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000000 
+WRITE  : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000000 
+READ  : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000000 
+WRITE  : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000100 
+READ  : TXCLOCKCONTROL [ 1F14A1A8 ] = 0x00000100 
+Init MII Phy 
+---------------------------------------------------------------------
+INFO: PHY Status : LINK UP 
+INFO: PHY Speed: 1 Gbps 
+INFO: PHY Mode: FULL Duplex  
+Setup Descriptor of Rx & Tx
+--------------------------------------------------------
+EthCtrl->EthAddrDescTx ->0    = 0xFF2217AC0 
+EthCtrl->EthAddrBuffTx ->0    = 0xFF808B040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E022C1
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=====================================================================
+Address of memory = 0xFF2217AC0 
+Size of memory    = 64 Bytes
+
+ 0xFF2217AC0 : 40 B0 08 F8 00 00 00 80 00 7B 21 F2 0F 00 0F 00
+ 0xFF2217AD0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217AE0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217AF0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217B00 :
+=====================================================================
+--------------------------------------------------------
+EthCtrl->EthAddrDescTx ->1    = 0xFF2217B00 
+EthCtrl->EthAddrBuffTx ->1    = 0xFF808C040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02301
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885ED0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=====================================================================
+Address of memory = 0xFF2217B00 
+Size of memory    = 64 Bytes
+
+ 0xFF2217B00 : 40 C0 08 F8 00 00 00 80 40 7B 21 F2 0F 00 0F 00
+ 0xFF2217B10 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217B20 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217B30 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217B40 :
+=====================================================================
+--------------------------------------------------------
+EthCtrl->EthAddrDescTx ->2    = 0xFF2217B40 
+EthCtrl->EthAddrBuffTx ->2    = 0xFF808D040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02341
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EE0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=====================================================================
+Address of memory = 0xFF2217B40 
+Size of memory    = 64 Bytes
+
+ 0xFF2217B40 : 40 D0 08 F8 00 00 00 80 80 7B 21 F2 0F 00 0F 00
+ 0xFF2217B50 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217B60 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217B70 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217B80 :
+=====================================================================
+--------------------------------------------------------
+EthCtrl->EthAddrDescTx ->3    = 0xFF2217B80 
+EthCtrl->EthAddrBuffTx ->3    = 0xFF808E040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02381
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EF0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=====================================================================
+Address of memory = 0xFF2217B80 
+Size of memory    = 64 Bytes
+
+ 0xFF2217B80 : 40 E0 08 F8 00 00 00 80 C0 7B 21 F2 0F 00 0F 00
+ 0xFF2217B90 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217BA0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217BB0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217BC0 :
+=====================================================================
+--------------------------------------------------------
+EthCtrl->EthAddrDescTx ->4    = 0xFF2217BC0 
+EthCtrl->EthAddrBuffTx ->4    = 0xFF808F040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E023C1
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F00
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=====================================================================
+Address of memory = 0xFF2217BC0 
+Size of memory    = 64 Bytes
+
+ 0xFF2217BC0 : 40 F0 08 F8 00 00 00 80 00 7C 21 F2 0F 00 0F 00
+ 0xFF2217BD0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217BE0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217BF0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217C00 :
+=====================================================================
+--------------------------------------------------------
+EthCtrl->EthAddrDescTx ->5    = 0xFF2217C00 
+EthCtrl->EthAddrBuffTx ->5    = 0xFF8090040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02401
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F10
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=====================================================================
+Address of memory = 0xFF2217C00 
+Size of memory    = 64 Bytes
+
+ 0xFF2217C00 : 40 00 09 F8 00 00 00 80 40 7C 21 F2 0F 00 0F 00
+ 0xFF2217C10 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217C20 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217C30 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217C40 :
+=====================================================================
+--------------------------------------------------------
+EthCtrl->EthAddrDescTx ->6    = 0xFF2217C40 
+EthCtrl->EthAddrBuffTx ->6    = 0xFF8091040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02441
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F20
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=====================================================================
+Address of memory = 0xFF2217C40 
+Size of memory    = 64 Bytes
+
+ 0xFF2217C40 : 40 10 09 F8 00 00 00 80 80 7C 21 F2 0F 00 0F 00
+ 0xFF2217C50 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217C60 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217C70 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217C80 :
+=====================================================================
+--------------------------------------------------------
+EthCtrl->EthAddrDescTx ->7    = 0xFF2217C80 
+EthCtrl->EthAddrBuffTx ->7    = 0xFF8092040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02481
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F30
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=====================================================================
+Address of memory = 0xFF2217C80 
+Size of memory    = 64 Bytes
+
+ 0xFF2217C80 : 40 20 09 F8 00 00 00 80 C0 7C 21 F2 0F 00 0F 00
+ 0xFF2217C90 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217CA0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217CB0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217CC0 :
+=====================================================================
+--------------------------------------------------------
+EthCtrl->EthAddrDescTx ->8    = 0xFF2217CC0 
+EthCtrl->EthAddrBuffTx ->8    = 0xFF8093040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E024C1
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F40
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=====================================================================
+Address of memory = 0xFF2217CC0 
+Size of memory    = 64 Bytes
+
+ 0xFF2217CC0 : 40 30 09 F8 00 00 00 80 00 7D 21 F2 0F 00 0F 00
+ 0xFF2217CD0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217CE0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217CF0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217D00 :
+=====================================================================
+--------------------------------------------------------
+EthCtrl->EthAddrDescTx ->9    = 0xFF2217D00 
+EthCtrl->EthAddrBuffTx ->9    = 0xFF8094040 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02501
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EB0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=====================================================================
+Address of memory = 0xFF2217D00 
+Size of memory    = 64 Bytes
+
+ 0xFF2217D00 : 40 40 09 F8 00 00 00 80 C0 7A 21 F2 0F 00 0F 00
+ 0xFF2217D10 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217D20 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217D30 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 0xFF2217D40 :
+=====================================================================
+Enable Filter Mode 
+==============================================================
+Set Unicast filter to registers 
+WRITE: 0x00002C20 : 0x00010000 
+WRITE: 0x00002C24 : 0xE0C0B0A0 
+WRITE: 0x00002C30 : 0x00010001 
+WRITE: 0x00002C34 : 0xE1C1B1A1 
+WRITE: 0x00002C40 : 0x00010002 
+WRITE: 0x00002C44 : 0xE2C2B2A2 
+WRITE: 0x00002C50 : 0x00010003 
+WRITE: 0x00002C54 : 0xE3C3B3A3 
+WRITE: 0x00002C60 : 0x00010004 
+WRITE: 0x00002C64 : 0xE4C4B4A4 
+WRITE: 0x00002C70 : 0x00010005 
+WRITE: 0x00002C74 : 0xE5C5B5A5 
+WRITE: 0x00002C80 : 0x00010006 
+WRITE: 0x00002C84 : 0xE6C6B6A6 
+WRITE: 0x00002C90 : 0x00010007 
+WRITE: 0x00002C94 : 0xE7C7B7A7 
+
+===================================================================
+UNICADDR0HI_REG     : 0x    2C20 = 0x00010000 
+UNICADDR0LO_REG     : 0x    2C24 = 0xE0C0B0A0 
+UNICADDRMASK0HI_REG : 0x    2C28 = 0x0000FFFF 
+UNICADDRMASK0LO_REG : 0x    2C2C = 0xFFFFFFFF 
+
+UNICADDR1HI_REG     : 0x    2C30 = 0x00010001 
+UNICADDR1LO_REG     : 0x    2C34 = 0xE1C1B1A1 
+UNICADDRMASK1HI_REG : 0x    2C38 = 0x0000FFFF 
+UNICADDRMASK1LO_REG : 0x    2C3C = 0xFFFFFFFF 
+
+UNICADDR2HI_REG     : 0x    2C40 = 0x00010002 
+UNICADDR2LO_REG     : 0x    2C44 = 0xE2C2B2A2 
+UNICADDRMASK2HI_REG : 0x    2C48 = 0x0000FFFF 
+UNICADDRMASK2LO_REG : 0x    2C4C = 0xFFFFFFFF 
+
+UNICADDR3HI_REG     : 0x    2C50 = 0x00010003 
+UNICADDR3LO_REG     : 0x    2C54 = 0xE3C3B3A3 
+UNICADDRMASK3HI_REG : 0x    2C58 = 0x0000FFFF 
+UNICADDRMASK3LO_REG : 0x    2C5C = 0xFFFFFFFF 
+
+UNICADDR4HI_REG     : 0x    2C60 = 0x00010004 
+UNICADDR4LO_REG     : 0x    2C64 = 0xE4C4B4A4 
+UNICADDRMASK4HI_REG : 0x    2C68 = 0x0000FFFF 
+UNICADDRMASK4LO_REG : 0x    2C6C = 0xFFFFFFFF 
+
+UNICADDR5HI_REG     : 0x    2C70 = 0x00010005 
+UNICADDR5LO_REG     : 0x    2C74 = 0xE5C5B5A5 
+UNICADDRMASK5HI_REG : 0x    2C78 = 0x0000FFFF 
+UNICADDRMASK5LO_REG : 0x    2C7C = 0xFFFFFFFF 
+
+UNICADDR6HI_REG     : 0x    2C80 = 0x00010006 
+UNICADDR6LO_REG     : 0x    2C84 = 0xE6C6B6A6 
+UNICADDRMASK6HI_REG : 0x    2C88 = 0x0000FFFF 
+UNICADDRMASK6LO_REG : 0x    2C8C = 0xFFFFFFFF 
+
+UNICADDR7HI_REG     : 0x    2C90 = 0x00010007 
+UNICADDR7LO_REG     : 0x    2C94 = 0xE7C7B7A7 
+UNICADDRMASK7HI_REG : 0x    2C98 = 0x0000FFFF 
+UNICADDRMASK7LO_REG : 0x    2C9C = 0xFFFFFFFF 
+
+===================================================================
+
+
+==================================================================
+READ: MPIC_DEBUG_REG= 0x00000000 
+READ: LINK_STS_INTR= 0x00000000 
+READ: AUTOPOLL_LINK_STS_INTR= 0x00000000 
+READ: MAC_INT_REG0_REG= 0x00000000 
+READ: MAC_INT_REG1_REG= 0x00000000 
+READ: ICM_ECM_INT_REG_REG= 0x00000000 
+READ: RX_TX_BUF_INT_REG= 0x00000000 
+READ: ICM_DROP_INT_REG= 0x00000000 
+READ: ICM_DROP_COUNT_REG= 0x00000000 
+READ: DMATXSTATUS= 0x00000000 
+READ: DMARXSTATUS= 0x00000000 
+READ: DMAINTERRUPT= 0x00000000 
+===========================================
+SENT PACKAGE & CHECK 'IntDMABusErrorTx' INTERRUPT
+===========================================
+
+*********************************************************************
+
+*********************************************************************
+
+           DUMP DESCRIPTOR RING ON TOP THE TEST                      
+
+*********************************************************************
+
+*********************************************************************
+
+=======================================================================
+DUMP: Descriptor - 0 at address: 0x00000000F2217AC0 
+DUMP: Descriptor -> PktStartAddrL = 0x3E022C1
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 1 at address: 0x00000000F2217B00 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02301
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885ED0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 2 at address: 0x00000000F2217B40 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02341
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EE0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 3 at address: 0x00000000F2217B80 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02381
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EF0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 4 at address: 0x00000000F2217BC0 
+DUMP: Descriptor -> PktStartAddrL = 0x3E023C1
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F00
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 5 at address: 0x00000000F2217C00 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02401
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F10
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 6 at address: 0x00000000F2217C40 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02441
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F20
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 7 at address: 0x00000000F2217C80 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02481
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F30
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 8 at address: 0x00000000F2217CC0 
+DUMP: Descriptor -> PktStartAddrL = 0x3E024C1
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F40
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 9 at address: 0x00000000F2217D00 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02501
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EB0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+*********************************************************************
+
+*********************************************************************
+
+==============================================================
+Begin sent package with a non-determine address of data 
+EthDev->Ctrl->EthAddrDescTx = 0xFF2217AC0 
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+EthDev->Ctrl->EthAddrDescTx = 0x0000000FF2217AC0 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor from address in DmaTxDesL & DmaTxDesH 
+DUMP: Descriptor -> PktStartAddrL = 0x3E022C1
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+INFO: Updated address of 'PktStartAddrL' & 'PktStartAddrH' in current point to 0x300000000 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor BEFORE trigger DMATXCTRL 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump descriptor AFTER sent 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000008 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+-------------------------------
+DMATXSTATUS = 0x00000008 
+###############################################
+####               TEST PASS               ####
+###############################################
+-------------------------------
+DMATXSTATUS = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+
+==============================================================
+Begin sent package with a non-determine address of data 
+EthDev->Ctrl->EthAddrDescTx = 0xFF2217AC0 
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+EthDev->Ctrl->EthAddrDescTx = 0x0000000FF2217AC0 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor from address in DmaTxDesL & DmaTxDesH 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+INFO: Updated address of 'PktStartAddrL' & 'PktStartAddrH' in current point to 0x300000000 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor BEFORE trigger DMATXCTRL 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump descriptor AFTER sent 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000008 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+-------------------------------
+DMATXSTATUS = 0x00000008 
+###############################################
+####               TEST PASS               ####
+###############################################
+-------------------------------
+DMATXSTATUS = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+
+==============================================================
+Begin sent package with a non-determine address of data 
+EthDev->Ctrl->EthAddrDescTx = 0xFF2217AC0 
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+EthDev->Ctrl->EthAddrDescTx = 0x0000000FF2217AC0 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor from address in DmaTxDesL & DmaTxDesH 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+INFO: Updated address of 'PktStartAddrL' & 'PktStartAddrH' in current point to 0x300000000 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor BEFORE trigger DMATXCTRL 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump descriptor AFTER sent 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000008 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+-------------------------------
+DMATXSTATUS = 0x00000008 
+###############################################
+####               TEST PASS               ####
+###############################################
+-------------------------------
+DMATXSTATUS = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+
+==============================================================
+Begin sent package with a non-determine address of data 
+EthDev->Ctrl->EthAddrDescTx = 0xFF2217AC0 
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+EthDev->Ctrl->EthAddrDescTx = 0x0000000FF2217AC0 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor from address in DmaTxDesL & DmaTxDesH 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+INFO: Updated address of 'PktStartAddrL' & 'PktStartAddrH' in current point to 0x300000000 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor BEFORE trigger DMATXCTRL 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump descriptor AFTER sent 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000008 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+-------------------------------
+DMATXSTATUS = 0x00000008 
+###############################################
+####               TEST PASS               ####
+###############################################
+-------------------------------
+DMATXSTATUS = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+
+==============================================================
+Begin sent package with a non-determine address of data 
+EthDev->Ctrl->EthAddrDescTx = 0xFF2217AC0 
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+EthDev->Ctrl->EthAddrDescTx = 0x0000000FF2217AC0 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor from address in DmaTxDesL & DmaTxDesH 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+INFO: Updated address of 'PktStartAddrL' & 'PktStartAddrH' in current point to 0x300000000 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor BEFORE trigger DMATXCTRL 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump descriptor AFTER sent 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000008 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+-------------------------------
+DMATXSTATUS = 0x00000008 
+###############################################
+####               TEST PASS               ####
+###############################################
+-------------------------------
+DMATXSTATUS = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+
+==============================================================
+Begin sent package with a non-determine address of data 
+EthDev->Ctrl->EthAddrDescTx = 0xFF2217AC0 
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+EthDev->Ctrl->EthAddrDescTx = 0x0000000FF2217AC0 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor from address in DmaTxDesL & DmaTxDesH 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+INFO: Updated address of 'PktStartAddrL' & 'PktStartAddrH' in current point to 0x300000000 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor BEFORE trigger DMATXCTRL 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump descriptor AFTER sent 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000000 
+DMATXSTATUS = 0x00000008 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+-------------------------------
+DMATXSTATUS = 0x00000008 
+###############################################
+####               TEST PASS               ####
+###############################################
+-------------------------------
+DMATXSTATUS = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+DMATXDESCRIPTORL = 0xF2217AC0 
+DMATXDESCRIPTORH = 0x0000000F 
+
+==============================================================
+Begin sent package with a non-determine address of data 
+EthDev->Ctrl->EthAddrDescTx = 0xFF2217AC0 
+DmaTxDesL = 0xF2217AC0 
+DmaTxDesH = 0x0000000F 
+EthDev->Ctrl->EthAddrDescTx = 0x0000000FF2217AC0 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor from address in DmaTxDesL & DmaTxDesH 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+INFO: Updated address of 'PktStartAddrL' & 'PktStartAddrH' in current point to 0x300000000 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor BEFORE trigger DMATXCTRL 
+DUMP: Descriptor -> PktStartAddrL = 0xC00000
+DUMP: Descriptor -> PktSize       = 0x40
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x0
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EC0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump descriptor AFTER sent 
+DUMP: Descriptor -> PktStartAddrL = 0x3C885EC
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0x0
+DUMP: Descriptor -> D             = 0x0
+DmaTxDesL = 0x00000000 
+DmaTxDesH = 0x00000000 
+-------------------------------
+TXCLOCKCONTROL = 0x00000100 
+DMAINTRMASK = 0x00000000 
+DMAINTERRUPT = 0x00000000 
+-------------------------------
+TX 
+DMATXCTRL = 0x00000001 
+DMATXSTATUS = 0x00000000 
+DMATXDESCRIPTORL = 0x00000000 
+DMATXDESCRIPTORH = 0x00000000 
+-------------------------------
+RX 
+DMARXCTRL = 0x00000000 
+DMARXSTATUS = 0x00000000 
+DMARXDESCRIPTORL = 0xF20DF040 
+DMARXDESCRIPTORH = 0x0000000F 
+-------------------------------
+DMATXSTATUS = 0x00000000 
+
+*********************************************************************
+
+*********************************************************************
+
+           DUMP DESCRIPTOR RING WHEN HAVE ISSUE                      
+
+*********************************************************************
+
+*********************************************************************
+
+=======================================================================
+DUMP: Descriptor - 0 at address: 0x00000000F2217AC0 
+DUMP: Descriptor -> PktStartAddrL = 0x3C885EC
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x0
+DUMP: Descriptor -> PktStartAddrH = 0x0
+DUMP: Descriptor -> NextDescAddrH = 0x0
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 1 at address: 0x00000000F2217B00 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02301
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885ED0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 2 at address: 0x00000000F2217B40 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02341
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EE0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 3 at address: 0x00000000F2217B80 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02381
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EF0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 4 at address: 0x00000000F2217BC0 
+DUMP: Descriptor -> PktStartAddrL = 0x3E023C1
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F00
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 5 at address: 0x00000000F2217C00 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02401
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F10
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 6 at address: 0x00000000F2217C40 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02441
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F20
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 7 at address: 0x00000000F2217C80 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02481
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F30
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 8 at address: 0x00000000F2217CC0 
+DUMP: Descriptor -> PktStartAddrL = 0x3E024C1
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885F40
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+=======================================================================
+DUMP: Descriptor - 9 at address: 0x00000000F2217D00 
+DUMP: Descriptor -> PktStartAddrL = 0x3E02501
+DUMP: Descriptor -> PktSize       = 0x0
+DUMP: Descriptor -> PktOvr        = 0x0
+DUMP: Descriptor -> E             = 0x1
+DUMP: Descriptor -> NextDescAddrL = 0x3C885EB0
+DUMP: Descriptor -> PktStartAddrH = 0xF
+DUMP: Descriptor -> NextDescAddrH = 0xF
+DUMP: Descriptor -> D             = 0x0
+
+*********************************************************************
+
+*********************************************************************
+
+==============================================================
+Begin sent package with a non-determine address of data 
+EthDev->Ctrl->EthAddrDescTx = 0xFF2217AC0 
+DmaTxDesL = 0x00000000 
+DmaTxDesH = 0x00000000 
+EthDev->Ctrl->EthAddrDescTx = 0x0000000000000000 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO: Dump the descriptor from address in DmaTxDesL & DmaTxDesH 
+
+
+Synchronous Exception at 0x0000000FF0F86F68
+Exception happened in /home/hhnguyen/Projects/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ValTestPkg/RGMII/vRGMII/DEBUG/vRGMII.dll loaded at 0x0000000FF0F6B000 
+0: FP 0x0000000FFFE9E220 SP 0x0000000FFFE9E220 PC 0x0000000FF0F80DAC in /home/hhnguyen/Projects/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ValTestPkg/RGMII/vRGMII/DEBUG/vRGMII.dll loaded at 0x0000000FF0F6B000 
+1: FP 0x0000000FFFE9E240 SP 0x0000000FFFE9E230 PC 0x0000000FF0F80DA8 in /home/hhnguyen/Projects/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ValTestPkg/RGMII/vRGMII/DEBUG/vRGMII.dll loaded at 0x0000000FF0F6B000 
+2: FP 0x0000000FFFE9E290 SP 0x0000000FFFE9E250 PC 0x0000000FF0F80404 in /home/hhnguyen/Projects/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ValTestPkg/RGMII/vRGMII/DEBUG/vRGMII.dll loaded at 0x0000000FF0F6B000 
+3: FP 0x0000000FFFE9E3E0 SP 0x0000000FFFE9E2A0 PC 0x0000000FF0F6D4D8 in /home/hhnguyen/Projects/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ValTestPkg/RGMII/vRGMII/DEBUG/vRGMII.dll loaded at 0x0000000FF0F6B000 
+4: FP 0x0000000FFFE9E420 SP 0x0000000FFFE9E3F0 PC 0x0000000FF0F6CF40 in /home/hhnguyen/Projects/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ValTestPkg/RGMII/vRGMII/DEBUG/vRGMII.dll loaded at 0x0000000FF0F6B000 
+5: FP 0x0000000FFFE9E460 SP 0x0000000FFFE9E430 PC 0x0000000FF0F6B3E8 in /home/hhnguyen/Projects/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ValTestPkg/RGMII/vRGMII/DEBUG/vRGMII.dll loaded at 0x0000000FF0F6B000 
+6: FP 0x0000000FFFE9E480 SP 0x0000000FFFE9E470 PC 0x0000000FF0F6B298 in /home/hhnguyen/Projects/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ValTestPkg/RGMII/vRGMII/DEBUG/vRGMII.dll loaded at 0x0000000FF0F6B000 
+7: FP 0x0000000FFFE9E4B0 SP 0x0000000FFFE9E490 PC 0x0000000FFFEA3790 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/MdeModulePkg/Core/Dxe/DxeMain/DEBUG/DxeCore.dll loaded at 0x0000000FFFE9F000 
+8: FP 0x0000000FFFE9E630 SP 0x0000000FFFE9E4C0 PC 0x0000000FF126F8F0 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll loaded at 0x0000000FF1265000 
+9: FP 0x0000000FFFE9E700 SP 0x0000000FFFE9E640 PC 0x0000000FF12F9590 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll loaded at 0x0000000FF1265000 
+10: FP 0x0000000FFFE9E790 SP 0x0000000FFFE9E710 PC 0x0000000FF129A9C0 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll loaded at 0x0000000FF1265000 
+11: FP 0x0000000FFFE9E7D0 SP 0x0000000FFFE9E7A0 PC 0x0000000FF12695E8 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll loaded at 0x0000000FF1265000 
+12: FP 0x0000000FFFE9E840 SP 0x0000000FFFE9E7E0 PC 0x0000000FF1269740 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll loaded at 0x0000000FF1265000 
+13: FP 0x0000000FFFE9E8A0 SP 0x0000000FFFE9E850 PC 0x0000000FF1269974 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll loaded at 0x0000000FF1265000 
+14: FP 0x0000000FFFE9E920 SP 0x0000000FFFE9E8B0 PC 0x0000000FF1269C34 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll loaded at 0x0000000FF1265000 
+15: FP 0x0000000FFFE9E970 SP 0x0000000FFFE9E930 PC 0x0000000FF1267F50 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll loaded at 0x0000000FF1265000 
+16: FP 0x0000000FFFE9E9C0 SP 0x0000000FFFE9E980 PC 0x0000000FF12662DC in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll loaded at 0x0000000FF1265000 
+17: FP 0x0000000FFFE9EA30 SP 0x0000000FFFE9E9D0 PC 0x0000000FF1265584 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll loaded at 0x0000000FF1265000 
+18: FP 0x0000000FFFE9EA50 SP 0x0000000FFFE9EA40 PC 0x0000000FF1265298 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll loaded at 0x0000000FF1265000 
+19: FP 0x0000000FFFE9EA80 SP 0x0000000FFFE9EA60 PC 0x0000000FFFEA3790 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/MdeModulePkg/Core/Dxe/DxeMain/DEBUG/DxeCore.dll loaded at 0x0000000FFFE9F000 
+20: FP 0x0000000FFFE9EC00 SP 0x0000000FFFE9EA90 PC 0x0000000FF8411E74 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/Build/AMITSE/DEBUG/AMITSE.dll loaded at 0x0000000FF83FD000 
+21: FP 0x0000000FFFE9ED20 SP 0x0000000FFFE9EC10 PC 0x0000000FF840F13C in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/Build/AMITSE/DEBUG/AMITSE.dll loaded at 0x0000000FF83FD000 
+22: FP 0x0000000FFFE9ED70 SP 0x0000000FFFE9ED30 PC 0x0000000FF8403FCC in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/Build/AMITSE/DEBUG/AMITSE.dll loaded at 0x0000000FF83FD000 
+23: FP 0x0000000FFFE9EE50 SP 0x0000000FFFE9ED80 PC 0x0000000FFFC293C4 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/AmiModulePkg/Bds/Bds/DEBUG/Bds.dll loaded at 0x0000000FFFC26000 
+24: FP 0x0000000FFFE9EE70 SP 0x0000000FFFE9EE60 PC 0x0000000FFFC294D4 in /projects/hcm/skylark/users/hhnguyen/XVAL_SKYLARK/xval_skylark/aptio/Build/Skylark/RELEASE_GCC/AARCH64/AmiModulePkg/Bds/Bds/DEBUG/Bds.dll loaded at 0x0000000FFFC26000 
+
+  X0 0x0000000000000000   X1 0x0000000000000000   X2 0x0000000000000004   X3 0x0000000000000000
+  X4 0x0000000FF20F6218   X5 0x0000000000000000   X6 0x0000000FF0F90D48   X7 0x0000000FFCF0562E
+  X8 0x0000000FFCF0562E   X9 0x0000000000000013  X10 0x0000000000002710  X11 0x0000000000000038
+ X12 0x0000000000989680  X13 0x0000000000000000  X14 0x0000000FF811AAFC  X15 0x0000000FF877B382
+ X16 0x0000000FFFE9DF80  X17 0x0000000FF8960A98  X18 0x00000000000885DD  X19 0x0000000FF8AED040
+ X20 0x0000000000000000  X21 0x0000000000000000  X22 0x0000000000000000  X23 0x0000000000000000
+ X24 0x0000000000000000  X25 0x0000000000000000  X26 0x0000000000000000  X27 0x0000000000000000
+ X28 0x0000000000000000   FP 0x0000000FFFE9E220   LR 0x0000000FF0F80DAC  
+
+  V0 0x0000000000000000 0000000000000000   V1 0xAB1C5ED5923F82A4 59F111F13956C25B
+  V2 0x550C7DC3243185BE 12835B01D807AA98   V3 0xC19BF1749BDC06A7 80DEB1FE72BE5D74
+  V4 0x240CA1CC0FC19DC6 EFBE4786E49B69C1   V5 0x76F988DA5CB0A9DC 4A7484AA2DE92C6F
+  V6 0xBF597FC7B00327C8 A831C66D983E5152   V7 0x1429296706CA6351 D5A79147C6E00BF3
+  V8 0x0000000000000000 2E1B213827B70A85   V9 0x0000000000000000 766A0ABB650A7354
+ V10 0x0000000000000000 A81A664BA2BFE8A1  V11 0x0000000000000000 D6990624D192E819
+ V12 0x0000000000000000 1E376C0819A4C116  V13 0x0000000000000000 4ED8AA4A391C0CB3
+ V14 0x0000000000000000 78A5636F748F82EE  V15 0x0000000000000000 A4506CEB90BEFFFA
+ V16 0x3C83709547545153 BC990E9F897D4FA8  V17 0xBEBEF297C5EC0578 E1D99AE8C2B92607
+ V18 0x13242833C5F05BAB 101C24C521387481  V19 0x0A50ABCAD0BDDA12 996865483E880969
+ V20 0x6C4ABAA53A9BE1CB 4416D9F479B08221  V21 0x60952147C3A68574 55B8AE51435C1A1A
+ V22 0x9FEB2A3B4AB8D3BF 88C1883495C7F76F  V23 0xD0C224BC8FB77E09 3DB8D233CF470963
+ V24 0x0E72963E02D21C93 C95B757DA62B3A12  V25 0x2A77DBA1E4EE5D5C E08479A1B557DFA8
+ V26 0xB593F86668CA8129 927A0019CDEC1A76  V27 0x6A4CB49A0E4B8EC8 5B41DA0F67CB1263
+ V28 0xFFF9FF77FAF5BE4B 6FBFEFDEB3BBBBEF  V29 0xAF7DFB5F00FFD7EA FBFDBE9E2DB9B29A
+ V30 0xEFEBFB4EBAFBFAED B0FEB9229EFBCBFD  V31 0xB8FEB900FEF3AEEB B4FE3900F7FE7D7E
+
+  SP 0x0000000FFFE9E220  ELR 0x0000000FF0F86F68  SPSR 0x80000309  FPSR 0x78000018
+ ESR 0x96000006          FAR 0x0000000000000000
+
+ ESR : EC 0x25  IL 0x1  ISS 0x00000006
+
+
+Data abort: Translation fault, second level
